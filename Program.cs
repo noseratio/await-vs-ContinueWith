@@ -1,4 +1,4 @@
-﻿namespace Test;
+namespace Test;
 
 using System;
 using System.Collections.Concurrent;
@@ -60,8 +60,8 @@ static class Program
 
     static async Task Main()
     {
-        const int threads = 1000;
-        const int iterations = 10000000;
+        const int threads = 2000;
+        const int iterations = 25000000;
 
         ThreadPool.SetMinThreads(threads, threads);
         ThreadPool.SetMaxThreads(threads, threads);
